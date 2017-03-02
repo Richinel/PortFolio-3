@@ -17,72 +17,6 @@ p {
 button {
   font-family: 'Noto Serif', serif !important;
 }
-/* Icon 1 */
-#nav-icon1 {
-  width: 60px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  z-index: 9999;
-  display: none;
-}
-#nav-icon1 span,
-#nav-icon3 span,
-#nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: #e6e6e6;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-#nav-icon1 span:nth-child(1) {
-  top: 0px;
-}
-#nav-icon1 span:nth-child(2) {
-  top: 18px;
-}
-#nav-icon1 span:nth-child(3) {
-  top: 36px;
-}
-#nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-#nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-#nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
 .btn1 {
   width: 150px;
   height: 50px;
@@ -104,20 +38,6 @@ button {
   margin: auto;
   position: relative;
 }
-.main_nav {
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  width: 100%;
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: 100;
-}
 .main_banner {
   background: url('../images/rdam.jpg');
   background-attachment: fixed;
@@ -129,6 +49,7 @@ button {
 .main_banner .wrapper {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 .main_banner .wrapper a {
   text-decoration: none !important;
@@ -158,6 +79,14 @@ button {
   color: white;
   text-align: center;
   letter-spacing: 3px;
+}
+.main_banner .wrapper i {
+  font-size: 85px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  position: relative;
+  animation: toggle 5s infinite;
 }
 .info-1 {
   padding: 50px 0;
@@ -316,6 +245,11 @@ footer i {
     display: block !important;
   }
 }
+@media screen and (max-width: 480px) {
+  .main_banner i {
+    animation: none !important;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -324,5 +258,22 @@ footer i {
   to {
     opacity: 1;
     display: block;
+  }
+}
+@keyframes toggle {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 50px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
   }
 }

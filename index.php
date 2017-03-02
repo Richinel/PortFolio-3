@@ -1,6 +1,6 @@
 <?php 
 	include('includes/header.php'); 
-	include('includes/nav.php');
+	//include('includes/nav.php');
 ?>
 
 	<div class="main_banner">
@@ -16,6 +16,8 @@
    					<span class="wrap"></span>
   				</a>
 			</h3>
+
+			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
 		</div>
 	</div>
 
@@ -119,7 +121,7 @@
 				E-mail me!
 			</div>
 
-			<form class='c_form'>
+			<form class='c_form' action='controllers/mailer.php' method='post'>
 				<input type="text" name="name" placeholder="Your name" required>
 
 				<input type="email" name="mail" placeholder="Your e-mailadress" required>
