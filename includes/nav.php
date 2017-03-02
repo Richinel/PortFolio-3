@@ -1,15 +1,27 @@
 <nav class='main_nav'>
 	<div class="wrapper">
-		<ul>
-			<li>
+		<div class="row gutters auto main_navbar">
+			<div class="col col-3">
 				Information
-			</li>
-			<li>
+			</div>
+
+			<div class="col col-3">
+				About me
+			</div>
+
+			<div class="col col-3">
 				Projects
-			</li>
-			<li>
+			</div>
+
+			<div class="col col-3">
 				Contact
-			</li>
-		</ul>
+			</div>			
+		</div>
+
+		<div id="nav-icon1">
+		  	<span></span>
+		  	<span></span>
+		  	<span></span>
+		</div>
 	</div>
 </nav>

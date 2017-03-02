@@ -1,5 +1,5 @@
 body {
-  font-family: 'Alegreya SC', serif !important;
+  font-family: 'Noto Serif', serif !important;
   background: white;
 }
 h1,
@@ -8,11 +8,92 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alegreya SC', serif !important;
+  font-family: 'Noto Serif', serif !important;
   font-weight: 100 !important;
 }
 p {
-  font-size: 18px;
+  font-size: 15px;
+}
+/* Icon 1 */
+#nav-icon1 {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #e6e6e6;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.btn1 {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.btn1:hover {
+  background: white;
+  color: #262626;
 }
 .wrapper {
   max-width: 1400px;
@@ -29,23 +110,15 @@ p {
   height: 100px;
   width: 100%;
   color: white;
-}
-.main_nav ul {
-  list-style: none;
-  line-height: 100px;
-  margin: auto;
   text-align: center;
-  padding: 0 !important;
-}
-.main_nav ul li {
-  display: inline;
-  font-size: 30px;
-  margin: 0 90px;
-  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
 }
 .main_banner {
   background: url('../images/rdam.jpg');
   background-attachment: fixed;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: table;
@@ -54,8 +127,15 @@ p {
   display: table-cell;
   vertical-align: middle;
 }
+.main_banner .wrapper a {
+  text-decoration: none !important;
+  cursor: default;
+}
+.main_banner .wrapper a:hover {
+  color: white;
+}
 .main_banner .wrapper img {
-  max-width: 250px;
+  max-width: 150px;
   width: 60%;
   display: block;
   margin: auto auto 50px auto;
@@ -77,7 +157,7 @@ p {
   letter-spacing: 3px;
 }
 .info-1 {
-  padding: 30px 0;
+  padding: 50px 0;
   min-height: 200px;
   text-align: center;
   box-shadow: 0 0 20px #ccc;
@@ -98,13 +178,17 @@ p {
   background: grey;
   margin: 20px auto;
 }
+.info-1 span {
+  color: grey;
+}
 .banner-2 {
   background: url('../images/rdam2.jpg');
   background-attachment: fixed;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: table;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .banner-2 .wrapper {
   display: table-cell;
@@ -132,7 +216,6 @@ p {
 }
 .banner-2 .wrapper p {
   color: white;
-  font-size: 20px;
   font-weight: 100 !important;
   width: 80%;
   margin: auto;
@@ -142,11 +225,8 @@ p {
   color: grey;
   font-size: 25px;
 }
-.banner-2 .wrapper p .quotes {
-  font-size: 45px;
-}
 .info-2 {
-  padding: 30px 0;
+  padding-top: 50px;
   min-height: 200px;
   text-align: center;
   box-shadow: 0 0 20px #ccc;
@@ -164,20 +244,78 @@ p {
   background: #262626;
   margin: 20px auto;
 }
-.info-2 img {
-  height: 100px;
-  padding-top: 30px;
-  margin-top: 30px;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+.info-2 .projects hr {
+  height: 1px;
+  background: #e6e6e6;
+  width: 200px;
 }
-.info-2 .quotes {
-  font-size: 45px;
+.info-2 .projects p {
   color: grey;
 }
-@media screen and (max-width: 1024px) {
-  .main_nav {
+.project_item {
+  padding-bottom: 50px;
+}
+.contact {
+  background: url('../images/rdam3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
+.contact h3 {
+  color: white;
+}
+.contact .c_form {
+  margin: 50px auto auto auto;
+  max-width: 800px;
+  display: none;
+}
+.contact .c_form input {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  margin-top: 50px;
+}
+.contact .c_form textarea {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  margin-top: 50px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.contact .c_form button {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  min-height: 200px;
+  padding: 50px 0;
+  background: #e6e6e6;
+  text-align: center;
+}
+footer hr {
+  margin: 30px 0;
+}
+footer i {
+  font-size: 40px !important;
+}
+@media screen and (max-width: 768px) {
+  .main_navbar {
+    display: none !important;
+  }
+  #nav-icon1 {
+    display: block !important;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
     display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
   }
 }
