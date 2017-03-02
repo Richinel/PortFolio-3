@@ -14,6 +14,9 @@ h6 {
 p {
   font-size: 15px;
 }
+button {
+  font-family: 'Noto Serif', serif !important;
+}
 /* Icon 1 */
 #nav-icon1 {
   width: 60px;
@@ -218,6 +221,7 @@ p {
   color: white;
   font-weight: 100 !important;
   width: 80%;
+  max-width: 1400px;
   margin: auto;
   text-align: center;
 }
@@ -226,7 +230,7 @@ p {
   font-size: 25px;
 }
 .info-2 {
-  padding-top: 50px;
+  padding: 50px 0;
   min-height: 200px;
   text-align: center;
   box-shadow: 0 0 20px #ccc;
@@ -253,7 +257,9 @@ p {
   color: grey;
 }
 .project_item {
-  padding-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
 }
 .contact {
   background: url('../images/rdam3.jpg');
@@ -285,8 +291,9 @@ p {
   height: 300px;
   margin-bottom: 50px;
 }
-.contact .c_form button {
-  width: 100%;
+.contact .c_form button,
+.contact .c_form .collapse_btn {
+  width: 100% !important;
 }
 footer {
   width: 100%;

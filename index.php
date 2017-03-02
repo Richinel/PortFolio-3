@@ -35,7 +35,7 @@
 
 	<div class="banner-2">
 		<div class="wrapper">
-		<img src="assets/images/rrj2.jpg">
+			<img src="assets/images/rrj2.jpg">
 
 			<h2>Why Programming?</h2>
 
@@ -75,7 +75,7 @@
 				</div>
 
 				<div class="col col-4 project_item">
-					<h5>Muziekvereniging 'Harmonie' Slikkerveer</h5>
+					<h5>Harmonie Slikkerveer</h5>
 
 					<span class="label outline warning upper">Under construction</span>
 
@@ -101,7 +101,7 @@
 						Casa-vastgoed is een dynamisch bedrijf met veel specialistische kennis in huis op het gebied van makelaardij in onroerend goed.
 					</p>
 
-					<a href="#" target="_blank" class='button primary disabled'>
+					<a href="#" target="_blank" class='button primary outline disabled'>
 						Coming soon!
 					</a>
 				</div>
@@ -129,18 +129,25 @@
 				<textarea name='msg' required>Your message..</textarea>
 
 				<div class="row gutters auto">
-					<div class="col col-6">
+					<div class="col col-4">
 						<button type='submit' name='submit' class='submit_btn button inverted outline'>
 							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							Send
 						</button>
 					</div>
 
-					<div class="col col-6">
+					<div class="col col-4">
 						<button type='reset' class='submit_btn button inverted outline'>
 							<i class="fa fa-history" aria-hidden="true"></i>
 							Reset fields
 						</button>
+					</div>
+
+					<div class="col col-4">
+						<div class='collapse_btn button inverted outline'>
+							<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							Collapse
+						</div>
 					</div>
 				</div>
 			</form>

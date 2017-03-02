@@ -14,7 +14,7 @@
 				</div>
 
 				<div class="col">					
-					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+					<i class="fa fa-instagram" aria-hidden="true"></i>
 				</div>
 			</div>
 

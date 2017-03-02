@@ -22,6 +22,10 @@ p {
 	font-size: 15px;
 }
 
+button {
+	font-family: 'Noto Serif', serif !important;
+}
+
 //MENU BUTTON
 
 /* Icon 1 */
@@ -258,6 +262,7 @@ p {
 			color: white;
 			font-weight: 100 !important;
 			width: 80%;
+			max-width: @max-width;
 			margin: auto;
 			text-align: center;
 
@@ -270,7 +275,7 @@ p {
 }
 
 .info-2 {
-	padding-top: 50px;
+	padding: 50px 0;
 	min-height: 200px;
 	text-align: center;
 	box-shadow: 0 0 20px #ccc;
@@ -304,7 +309,9 @@ p {
 }
 
 .project_item {
-	padding-bottom: 50px;
+	padding: 20px;
+	border: 1px solid @grey;
+	border-radius: 3px;
 }
 
 .contact {
@@ -340,8 +347,9 @@ p {
 			margin-bottom: 50px;
 		}
 
-		button {
-			width: 100%;
+		button,
+		.collapse_btn {
+			width: 100% !important;
 		}
 	}
 }

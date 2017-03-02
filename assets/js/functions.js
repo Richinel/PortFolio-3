@@ -3,13 +3,17 @@ $(function() {
     	$('.c_form').slideDown(600);
     });
 
+    $('.collapse_btn').click( function() {
+    	$('.c_form').slideToggle(600);
+    });
+
     $('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
 	});
 
 	// $(document).scroll(function() {
 	//   	var y = $(this).scrollTop();
-	  	
+
  //  		if (y > 800) {
  //    		$('.bottomMenu').fadeIn();
  //  		} 
