@@ -7,20 +7,35 @@ $(function() {
     	$('.c_form').slideToggle(600);
     });
 
-    $('#nav-icon1').click(function(){
-		$(this).toggleClass('open');
+    $('.menu_btn').click(function(){
+		$('.mobile_menu').fadeToggle(150);
 	});
 
-	// $(document).scroll(function() {
-	//   	var y = $(this).scrollTop();
+    $('.mm_item').click(function(){
+        $('.mobile_menu').fadeOut(150);
+    });
 
- //  		if (y > 800) {
- //    		$('.bottomMenu').fadeIn();
- //  		} 
- //  		else {
- //    		$('.bottomMenu').fadeOut();
- //  		}
-	// });
+    AOS.init();
+
+    $(document).ready(function(){
+       $(window).bind('scroll', function() {
+       var navHeight = $( window ).height() - 70;
+             if ($(window).scrollTop() > navHeight) {
+                 $('nav').addClass('fixed');
+             }
+             else {
+                 $('nav').removeClass('fixed');
+             }
+        });
+    });
+
+    $(document).on('click', 'a', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+    });
 });
 
 var TxtType = function(el, toRotate, period) {

@@ -1,27 +1,8 @@
-<nav class='main_nav'>
-	<div class="wrapper">
-		<div class="row gutters auto main_navbar">
-			<div class="col col-3">
-				Information
-			</div>
-
-			<div class="col col-3">
-				About me
-			</div>
-
-			<div class="col col-3">
-				Projects
-			</div>
-
-			<div class="col col-3">
-				Contact
-			</div>			
-		</div>
-
-		<div id="nav-icon1">
-		  	<span></span>
-		  	<span></span>
-		  	<span></span>
-		</div>
-	</div>
-</nav>
+<div class="mobile_menu">
+	<ul>
+		<li><a class='mm_item' href="#welcome">Welcome</a></li>
+		<li><a class='mm_item' href="#whyprogramming">Why Programming?</a></li>
+		<li><a class='mm_item' href="#projects">Projects</a></li>
+		<li><a class='mm_item' href="#contact">Contact</a></li>
+	</ul>
+</div>

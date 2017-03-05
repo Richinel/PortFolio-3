@@ -34,6 +34,14 @@
 		</div>
 	</footer>
 
+	
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script
+  		src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous">	
+  	</script>
+  	<script src='assets/js/functions.js'></script>
 
 </body>
 </html>

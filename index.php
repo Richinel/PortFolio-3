@@ -1,118 +1,138 @@
 <?php 
 	include('includes/header.php'); 
-	//include('includes/nav.php');
+	include('includes/nav.php'); 
 ?>
 
-	<div class="main_banner">
+	<div class="main_banner" id='forefront'>
 		<div class="wrapper">
-			<img src="assets/images/rrj_white.png">
+			<img src="assets/images/rrj_white.png" data-aos="zoom-in" data-aos-duration="1750" alt="RJ">
 
-			<h1>Richinel Jarbandhan</h1>
+			<h1 data-aos="zoom-in" data-aos-duration="1750">Richinel Jarbandhan</h1>
 
-				<hr>
+				<hr data-aos="zoom-in" data-aos-duration="1750">
 
-			<h3>
+			<h3 data-aos="zoom-in" data-aos-duration="1750">
 				<a href="" class="typewrite" data-period="2000" data-type='[ "Webdeveloper", "Also a student", "Who happens to love football", "And fitness when there is some spare time"]'>
-   					<span class="wrap"></span>
+   					<span class="wrap"></span>.
   				</a>
 			</h3>
 
-			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			<i class="fa fa-angle-double-down" aria-hidden="true" data-aos="zoom-in" data-aos-duration="1750"></i>
 		</div>
 	</div>
 
-	<div class="info-1">
+	<nav class="nav" id="nav">
+		<img class='nav_img' src="assets/images/rrj_white.png" alt="RJ">
+
+		<ul>
+			<li><a href="#forefront"><img src="assets/images/rrj_white.png" alt="RJ"></a></li>
+			<li><a href="#welcome">Welcome</a></li>
+			<li><a href="#whyprogramming">Why Programming?</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+		<i class="fa fa-bars menu_btn" aria-hidden="true"></i>
+	</nav>
+
+	<div class="info-1" id="welcome">
 		<div class="wrapper">
-			<i class="fa fa-university" aria-hidden="true"></i>
+			<i class="fa fa-university" aria-hidden="true"  data-aos="fade-up" data-aos-duration="1250"></i>
 
-			<h2>Welcome</h2>
+			<h2  data-aos="fade-up" data-aos-duration="1250">Welcome</h2>
 
-				<hr>
+				<hr  data-aos="fade-up" data-aos-duration="1250">
 
-			<p>
+			<p  data-aos="fade-up" data-aos-duration="1250">
 				My name is <span>Richinel Jarbandhan</span> and I am a <span>23-year-old student</span>. At the moment I am following the course of <span>Application Developer</span> at <span>Albeda College in Rotterdam, the Netherlands.</span> I chose this course because I have been into computers pretty much my entire life. Since I was a child I was interested in computers and everything that had to do with them.
 			</p>
 		</div>
 	</div>
 
-	<div class="banner-2">
+	<div class="banner-2" id="whyprogramming">
 		<div class="wrapper">
-			<img src="assets/images/rrj2.jpg">
+			<img src="assets/images/rrj2.jpg" data-aos="fade-up" data-aos-duration="1000" alt="RJ">
 
-			<h2>Why Programming?</h2>
+			<h2 data-aos="fade-up" data-aos-duration="1000">Why Programming?</h2>
 
-			<hr>
+			<hr data-aos="fade-up" data-aos-duration="1000">
 
-			<p>
+			<p data-aos="fade-up" data-aos-duration="1000">
 				It all began with repairing computers and laptops from friends and/or family. I always wanted to know how everything works and that is how I got most of my knowledge about computers. I always experimented and did a lot of research myself. This is also the reason that I chose a course that suited my interests well. After high school I enrolled for the course of “Assistant IT Worker”. During this course I also had a subject that was called “Webdesign”. In this subject you basically learn how to create simple websites and you learn the basics of HTML and CSS. At first I really did not like this subject, because I had never coded before. But the more I tried to understand it, the more fun and interesting it got for me. This is why I chose the course of Application Developer.
 			</p>
 		</div>
 	</div>
 
-	<div class="info-2">
+	<div class="info-2" id="projects">
 		<div class="wrapper">
-			<i class="fa fa-briefcase" aria-hidden="true"></i>
+			<i class="fa fa-briefcase" aria-hidden="true" data-aos="fade-up" data-aos-duration="1000"></i>
 
-			<h2>Projects</h2>
+			<h2 data-aos="fade-up" data-aos-duration="1000">Projects</h2>
 
-				<hr>
+				<hr data-aos="fade-up" data-aos-duration="1000">
 
-				
+			<div class="row_wrapper">
+				<div class="row gutters auto projects">
+					<div class="col col-4 project_item" data-aos="zoom-in" data-aos-duration="1000">
+						<img src="assets/images/encaasa1.jpg" alt="Encaasa">
 
-			<div class="row gutters auto projects">
-				<div class="col col-4 project_item">
-					<h5>Encaasa Bewindvoering</h5>
+						<h5>Encaasa Bewindvoering</h5>
 
-					<span class="label outline success upper">Completed</span>
+						<span class="label outline success upper">Completed</span>
 
-					<hr>
+						<hr>
 
-					<p>
-						U hebt geprobeerd uw geldproblemen zelf op te lossen, maar u komt er niet meer uit. Als mensen er zelf niet meer uitkomen dan kunnen zij hulp krijgen van Encaasa Bewindvoering.
-					</p>
+						<p>
+							U hebt geprobeerd uw geldproblemen zelf op te lossen, maar u komt er niet meer uit. Als mensen er zelf niet meer uitkomen dan kunnen zij hulp krijgen van Encaasa Bewindvoering.
+						</p>
 
-					<a href="http://www.encaasabewindvoering.nl" target="_blank" class='button primary'>
-						Launch website
-					</a>
-				</div>
+						<a href="http://www.encaasabewindvoering.nl" target="_blank" class='button primary'>
+							Launch website
+						</a>
+					</div>
 
-				<div class="col col-4 project_item">
-					<h5>Harmonie Slikkerveer</h5>
+					<div class="col col-4 project_item" data-aos="zoom-in" data-aos-duration="1000">
+						<img src="assets/images/hs_logo.jpg" alt="Harmonie Slikkerveer">
 
-					<span class="label outline warning upper">Under construction</span>
+						<h5>Harmonie Slikkerveer</h5>
 
-					<hr>
+						<span class="label outline warning upper">Under construction</span>
 
-					<p>
-						Muziekvereniging "Harmonie" Slikkerveer is de oudste (muziek-)vereniging van Ridderkerk. Zij is opgericht op 15 juni 1892 en daarmee in 2017 al 125 jaar
-					</p>
+						<hr>
 
-					<a href="http://www.test-rj.nl" target="_blank" class='button primary'>
-						Live demo
-					</a>
-				</div>
+						<p>
+							Muziekvereniging "Harmonie" Slikkerveer is de oudste (muziek-)vereniging van Ridderkerk. Zij is opgericht op 15 juni 1892 en daarmee in 2017 al 125 jaar
+						</p>
 
-				<div class="col col-4 project_item">
-					<h5>Casa Vastgoed BV</h5>
+						<a href="http://www.test-rj.nl" target="_blank" class='button primary'>
+							Live demo
+						</a>
+					</div>
 
-					<span class="label outline warning upper">Under construction</span>
+					<div class="col col-4 project_item" data-aos="zoom-in" data-aos-duration="1000">
+					<img src="assets/images/casavastgoed_main.png" alt="Encaasa">
 
-					<hr>
+						<h5>Casa Vastgoed BV</h5>
 
-					<p>
-						Casa-vastgoed is een dynamisch bedrijf met veel specialistische kennis in huis op het gebied van makelaardij in onroerend goed.
-					</p>
+						<span class="label outline warning upper">Under construction</span>
 
-					<a href="#" target="_blank" class='button primary outline disabled'>
-						Coming soon!
-					</a>
+						<hr>
+
+						<p>
+							Casa-vastgoed is een dynamisch bedrijf met veel specialistische kennis in huis op het gebied van makelaardij in onroerend goed.
+						</p>
+
+						<a href="#" target="_blank" class='button primary outline disabled'>
+							Coming soon!
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="contact">
-		<div class="wrapper">
+	<div class="contact" id='contact'>
+		<div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
 			<h3>
 				Do you have any questions or suggestions, or do you just want to talk?
 			</h3>

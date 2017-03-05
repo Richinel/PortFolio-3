@@ -1,6 +1,9 @@
+html {
+  background: black;
+}
 body {
   font-family: 'Noto Serif', serif !important;
-  background: white;
+  animation: fadeIn 2s;
 }
 h1,
 h2,
@@ -88,12 +91,99 @@ button {
   position: relative;
   animation: toggle 5s infinite;
 }
+.nav {
+  width: 100%;
+  height: 50px;
+  background: #262626;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 5px solid grey;
+  position: relative;
+  transition: 75ms ease;
+}
+.nav .nav_img {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  height: 35px;
+  display: none;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 75ms ease-in;
+}
+.nav ul li a img {
+  height: 35px;
+  position: absolute;
+  top: 6px;
+}
+.nav ul li a:hover {
+  opacity: 1;
+}
+.nav .menu_btn {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 25px;
+  top: 12px;
+  display: none;
+  cursor: pointer;
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.mobile_menu {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  bottom: 0;
+  background: #262626;
+  display: none;
+  z-index: 999;
+}
+.mobile_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile_menu ul li {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.mobile_menu ul li a {
+  color: white;
+  text-decoration: none;
+}
 .info-1 {
   padding: 50px 0;
-  min-height: 200px;
+  min-height: 100vh;
   text-align: center;
-  box-shadow: 0 0 20px #ccc;
   color: #262626;
+  display: table;
+  width: 100%;
+  background: white;
+}
+.info-1 .wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 .info-1 i {
   font-size: 45px;
@@ -109,6 +199,10 @@ button {
   height: 3px;
   background: grey;
   margin: 20px auto;
+}
+.info-1 p {
+  width: 80%;
+  margin: auto;
 }
 .info-1 span {
   color: grey;
@@ -160,10 +254,21 @@ button {
 }
 .info-2 {
   padding: 50px 0;
-  min-height: 200px;
+  height: 100vh;
+  display: table;
   text-align: center;
   box-shadow: 0 0 20px #ccc;
   color: #262626;
+  width: 100%;
+  background: white;
+}
+.info-2 .wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.info-2 .wrapper .row_wrapper {
+  width: 80%;
+  margin: auto;
 }
 .info-2 i {
   font-size: 45px;
@@ -177,18 +282,22 @@ button {
   background: #262626;
   margin: 20px auto;
 }
-.info-2 .projects hr {
+.info-2 .projects .project_item {
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.info-2 .projects .project_item img {
+  height: 75px;
+  object-fit: cover;
+}
+.info-2 .projects .project_item hr {
   height: 1px;
   background: #e6e6e6;
   width: 200px;
 }
-.info-2 .projects p {
+.info-2 .projects .project_item p {
   color: grey;
-}
-.project_item {
-  padding: 20px;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
 }
 .contact {
   background: url('../images/rdam3.jpg');
@@ -237,27 +346,33 @@ footer hr {
 footer i {
   font-size: 40px !important;
 }
-@media screen and (max-width: 768px) {
-  .main_navbar {
+@media screen and (min-width: 1125px) {
+  .mobile_menu {
     display: none !important;
   }
-  #nav-icon1 {
-    display: block !important;
+}
+@media screen and (max-width: 1125px) {
+  .nav .nav_img {
+    display: block;
+    margin: auto;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav .menu_btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_banner,
+  .banner-2 {
+    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (max-width: 480px) {
   .main_banner i {
     animation: none !important;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    display: none;
-  }
-  to {
-    opacity: 1;
-    display: block;
   }
 }
 @keyframes toggle {
@@ -275,5 +390,13 @@ footer i {
   }
   100% {
     top: 0px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
