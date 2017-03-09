@@ -90,7 +90,7 @@
 
 						<h5>Encaasa Bewindvoering</h5>
 
-						<span class="label outline success upper">Completed</span>
+						<!-- <span class="label outline success upper">Completed</span> -->
 
 						<hr>
 
@@ -99,6 +99,7 @@
 						</p>
 
 						<a href="http://www.encaasabewindvoering.nl" target="_blank" class='button primary'>
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
 							Launch website
 						</a>
 					</div>
@@ -108,7 +109,7 @@
 
 						<h5>Harmonie Slikkerveer</h5>
 
-						<span class="label outline warning upper">Under construction</span>
+						<!-- <span class="label outline warning upper">Under construction</span> -->
 
 						<hr>
 
@@ -117,16 +118,17 @@
 						</p>
 
 						<a href="http://www.test-rj.nl" target="_blank" class='button primary'>
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
 							Live demo
 						</a>
 					</div>
 
 					<div class="col col-4 project_item" data-aos="zoom-in" data-aos-duration="1000">
-					<img src="assets/images/casavastgoed_main.png" alt="Encaasa">
+					<img src="assets/images/casavastgoed_main.jpg" alt="Casa Vastgoed">
 
 						<h5>Casa Vastgoed BV</h5>
 
-						<span class="label outline warning upper">Under construction</span>
+						<!-- <span class="label outline warning upper">Under construction</span> -->
 
 						<hr>
 
@@ -135,6 +137,7 @@
 						</p>
 
 						<a href="#" target="_blank" class='button primary outline disabled'>
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
 							Coming soon!
 						</a>
 					</div>

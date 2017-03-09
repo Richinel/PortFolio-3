@@ -272,7 +272,7 @@ button {
   width: 80%;
   margin: auto;
 }
-.info-2 i {
+.info-2 .fa-briefcase {
   font-size: 45px;
   color: #e6e6e6;
   margin-bottom: 20px;
