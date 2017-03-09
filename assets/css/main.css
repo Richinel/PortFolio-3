@@ -99,7 +99,9 @@ button {
   line-height: 50px;
   text-align: center;
   border-bottom: 5px solid grey;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   transition: 75ms ease;
 }
 .nav .nav_img {

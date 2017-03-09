@@ -7,7 +7,7 @@
 
 	<!-- Forefront -->
 	
-	<div class="main_banner" id='forefront'>
+	<div class="main_banner" id='forefront' data-parallax="scroll" data-image-src="assets/images/rdam.jpg">
 		<div class="wrapper">
 			<img src="assets/images/rrj_white.png" data-aos="zoom-in" data-aos-duration="1750" alt="RJ">
 
