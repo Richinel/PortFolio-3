@@ -19,7 +19,7 @@ $(function() {
 
     $(document).ready(function(){
        $(window).bind('scroll', function() {
-       var navHeight = $( window ).height() - 70;
+       var navHeight = $( window ).height();
              if ($(window).scrollTop() > navHeight) {
                  $('nav').addClass('fixed');
              }
@@ -30,7 +30,7 @@ $(function() {
     });
 
     $(document).on('click', 'a', function(event){
-        event.preventDefault();
+        //event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top

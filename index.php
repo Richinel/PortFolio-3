@@ -1,8 +1,12 @@
 <?php 
+	// Include Header & Mobile Navigation
 	include('includes/header.php'); 
 	include('includes/nav.php'); 
 ?>
+<!-- Body -->
 
+	<!-- Forefront -->
+	
 	<div class="main_banner" id='forefront'>
 		<div class="wrapper">
 			<img src="assets/images/rrj_white.png" data-aos="zoom-in" data-aos-duration="1750" alt="RJ">
@@ -21,6 +25,8 @@
 		</div>
 	</div>
 
+	<!-- Navigation Bar -->
+
 	<nav class="nav" id="nav">
 		<img class='nav_img' src="assets/images/rrj_white.png" alt="RJ">
 
@@ -34,6 +40,8 @@
 
 		<i class="fa fa-bars menu_btn" aria-hidden="true"></i>
 	</nav>
+
+	<!-- Information Block I (Introduction) -->
 
 	<div class="info-1" id="welcome">
 		<div class="wrapper">
@@ -49,6 +57,8 @@
 		</div>
 	</div>
 
+	<!-- Personal Block -->
+
 	<div class="banner-2" id="whyprogramming">
 		<div class="wrapper">
 			<img src="assets/images/rrj2.jpg" data-aos="fade-up" data-aos-duration="1000" alt="RJ">
@@ -62,6 +72,8 @@
 			</p>
 		</div>
 	</div>
+
+	<!-- Information Block II (Projects) -->
 
 	<div class="info-2" id="projects">
 		<div class="wrapper">
@@ -131,6 +143,8 @@
 		</div>
 	</div>
 
+	<!-- Contact Section -->
+
 	<div class="contact" id='contact'>
 		<div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
 			<h3>
@@ -175,5 +189,7 @@
 			</form>
 		</div>
 	</div>
+
+	<!-- Footer -->
 
 <?php include('includes/footer.php'); ?>

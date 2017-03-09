@@ -29,7 +29,7 @@
 			<hr>
 
 			<p>
-				Richinel Jarbandhan | 2013 - <?php echo date('Y'); ?>
+				Richinel Jarbandhan | 2013 - <?php echo date('Y'); ?> &copy;
 			</p>
 		</div>
 	</footer>
