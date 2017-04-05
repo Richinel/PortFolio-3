@@ -16,12 +16,12 @@
 				<hr data-aos="zoom-in" data-aos-duration="1750">
 
 			<h3 data-aos="zoom-in" data-aos-duration="1750">
-				<a href="" class="typewrite" data-period="2000" data-type='[ "Webdeveloper", "Also a student", "Who happens to love football", "And fitness when there is some spare time"]'>
-   					<span class="wrap"></span>.
-  				</a>
+				Webdeveloper
 			</h3>
 
-			<i class="fa fa-angle-double-down" aria-hidden="true" data-aos="zoom-in" data-aos-duration="1750"></i>
+			<a href="#welcome">
+				<i class="fa fa-angle-double-down" aria-hidden="true" data-aos="zoom-in" data-aos-duration="1750"></i>
+			</a>
 		</div>
 	</div>
 

@@ -22,9 +22,11 @@ $(function() {
        var navHeight = $( window ).height();
              if ($(window).scrollTop() > navHeight) {
                  $('nav').addClass('fixed');
+                 $('.mobile_menu').addClass('mm-fixed');
              }
              else {
                  $('nav').removeClass('fixed');
+                 $('.mobile_menu').removeClass('mm-fixed');
              }
         });
     });

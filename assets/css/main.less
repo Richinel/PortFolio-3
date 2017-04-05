@@ -107,6 +107,7 @@ button {
 			font-size: 85px;
 			text-align: center;
 			color: white;
+			padding: 30px 0;
 			margin-top: 40px;
 			position: relative;
 			animation: toggle 5s infinite;
@@ -184,15 +185,25 @@ button {
 	z-index: 9999;
 }
 
-.mobile_menu {
-	position: fixed;
-	top: 50px;
+.mm-fixed {
+	position: fixed !important;
+	top: 50px !important;
+	width: 300px;
 	right: 0;
-	width: 200px;
 	bottom: 0;
+	z-index: 9999;
+}
+
+.mobile_menu {
+	position: absolute;
+	top: 105.2vh;
+	right: 0;
+	width: 300px;
+	//bottom: 0;
+	min-height: 100vh;
 	background: @darkGrey;
 	display: none;
-	z-index: 999;
+	z-index: 99999;
 
 	ul {
 		list-style: none;
@@ -347,6 +358,7 @@ button {
 			padding: 20px;
 			border: 1px solid @grey;
 			border-radius: 3px;
+			position: relative;
 
 			img {
 				height: 75px;
@@ -361,6 +373,16 @@ button {
 
 			p {
 				color: grey;
+				padding-bottom: 65px;
+			}
+
+			a {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 180px;
+				bottom: 15px;
 			}
 		}
 	}
