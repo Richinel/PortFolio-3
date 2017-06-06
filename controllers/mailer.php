@@ -4,7 +4,7 @@
 	$mail		= $_POST['mail'];
 	$subject	= $_POST['subject'];
 	$msg		= $_POST['msg'];
-	$mymail		= 'richinel_jarbandhan@hotmail.com';
+	$mymail		= 'rj_1993@live.nl';
 
 	//Send mail
 	mail($mymail, $subject, $msg);
